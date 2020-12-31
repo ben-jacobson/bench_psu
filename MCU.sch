@@ -323,4 +323,15 @@ Wire Wire Line
 	6150 2450 6600 2450
 Text GLabel 6600 2450 2    50   Input ~ 0
 AREF
+Text GLabel 6600 2550 2    50   Input ~ 0
+CH1_VOLT_SENSE
+Text GLabel 6600 2650 2    50   Input ~ 0
+CH2_VOLT_SENSE
+Wire Wire Line
+	6150 2550 6600 2550
+Wire Wire Line
+	6150 2650 6600 2650
+NoConn ~ 6150 2750
+NoConn ~ 6150 3150
+NoConn ~ 6150 3550
 $EndSCHEMATC
