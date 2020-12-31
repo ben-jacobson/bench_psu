@@ -331,7 +331,13 @@ Wire Wire Line
 	6150 2550 6600 2550
 Wire Wire Line
 	6150 2650 6600 2650
-NoConn ~ 6150 2750
-NoConn ~ 6150 3150
 NoConn ~ 6150 3550
+Wire Wire Line
+	6150 3150 6600 3150
+Text GLabel 6600 2750 2    50   Input ~ 0
+V1SET_SS
+Text GLabel 6600 3150 2    50   Input ~ 0
+V2SET_SS
+Wire Wire Line
+	6150 2750 6600 2750
 $EndSCHEMATC
