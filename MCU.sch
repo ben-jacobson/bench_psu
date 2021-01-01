@@ -138,8 +138,6 @@ Wire Wire Line
 	5000 6600 5000 6250
 Wire Wire Line
 	5000 6250 4800 6250
-Text GLabel 4100 6150 0    50   Input ~ 0
-PRG_SWIM
 $Comp
 L power:GND #PWR026
 U 1 1 5FF14FED
@@ -174,8 +172,6 @@ Wire Wire Line
 	4550 6700 3600 6700
 Wire Wire Line
 	4100 5950 4300 5950
-Wire Wire Line
-	4100 6150 4300 6150
 Wire Wire Line
 	4300 6050 3600 6050
 Wire Wire Line
@@ -354,7 +350,6 @@ Text GLabel 7050 3850 2    50   Input ~ 0
 PRG_SWDIO
 Text GLabel 7050 3950 2    50   Input ~ 0
 PRG_SWCLK
-NoConn ~ 4200 6150
 Wire Wire Line
 	5750 3950 5550 3950
 Wire Wire Line
@@ -432,4 +427,7 @@ Wire Wire Line
 	5550 3650 5750 3650
 Wire Wire Line
 	5550 3750 5750 3750
+Text Notes 3650 6200 0    50   ~ 0
+PRG_SWIM (NC)
+NoConn ~ 4300 6150
 $EndSCHEMATC

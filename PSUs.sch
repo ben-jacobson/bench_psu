@@ -92,8 +92,6 @@ Wire Wire Line
 	8700 2400 8700 2250
 Wire Wire Line
 	8700 2400 7800 2400
-Wire Wire Line
-	7800 2400 7800 2150
 Connection ~ 8700 2400
 NoConn ~ 7300 1600
 Connection ~ 7800 2400
@@ -171,57 +169,12 @@ F 3 "~" H 7000 1400 50  0001 C CNN
 $EndComp
 Text Notes 6200 1400 0    50   ~ 0
 8-40Vin
-$Comp
-L power:PWR_FLAG #GNDFLAG?
-U 1 1 605245E4
-P 7800 2150
-AR Path="/605245E4" Ref="#GNDFLAG?"  Part="1" 
-AR Path="/604D3BA3/605245E4" Ref="#GNDFLAG0101"  Part="1" 
-F 0 "#GNDFLAG0101" H 7800 2225 50  0001 C CNN
-F 1 "PWR_FLAG" V 7800 2278 50  0000 L CNN
-F 2 "" H 7800 2150 50  0001 C CNN
-F 3 "~" H 7800 2150 50  0001 C CNN
-	1    7800 2150
-	0    1    1    0   
-$EndComp
-Connection ~ 7800 2150
-Wire Wire Line
-	7800 2150 7800 2000
 Text Notes 7500 1050 0    50   ~ 0
 CH2 Adjustable PSU
 Text Notes 2550 1050 0    50   ~ 0
 CH1 Adjustable PSU
-Wire Wire Line
-	2850 2150 2850 2000
-Connection ~ 2850 2150
-$Comp
-L power:PWR_FLAG #GNDFLAG?
-U 1 1 605245F3
-P 2850 2150
-AR Path="/605245F3" Ref="#GNDFLAG?"  Part="1" 
-AR Path="/604D3BA3/605245F3" Ref="#GNDFLAG0102"  Part="1" 
-F 0 "#GNDFLAG0102" H 2850 2225 50  0001 C CNN
-F 1 "PWR_FLAG" V 2850 2278 50  0000 L CNN
-F 2 "" H 2850 2150 50  0001 C CNN
-F 3 "~" H 2850 2150 50  0001 C CNN
-	1    2850 2150
-	0    1    1    0   
-$EndComp
 Text Notes 1250 1400 0    50   ~ 0
 8-40Vin
-$Comp
-L power:PWR_FLAG #8-40Vin?
-U 1 1 605245FA
-P 2050 1400
-AR Path="/605245FA" Ref="#8-40Vin?"  Part="1" 
-AR Path="/604D3BA3/605245FA" Ref="#8-40Vin0102"  Part="1" 
-F 0 "#8-40Vin0102" H 2050 1475 50  0001 C CNN
-F 1 "PWR_FLAG" H 1900 1550 50  0000 L CNN
-F 2 "" H 2050 1400 50  0001 C CNN
-F 3 "~" H 2050 1400 50  0001 C CNN
-	1    2050 1400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Regulator_Switching:LM2674N-ADJ U?
 U 1 1 60524600
@@ -245,17 +198,10 @@ Wire Wire Line
 	3700 1600 3750 1600
 Wire Wire Line
 	3350 1600 3400 1600
-Connection ~ 2050 1400
-Wire Wire Line
-	2050 1400 1800 1400
 Wire Wire Line
 	2050 2400 2850 2400
 Wire Wire Line
 	2050 1850 2050 2400
-Wire Wire Line
-	2050 1400 2050 1550
-Wire Wire Line
-	2350 1400 2050 1400
 Wire Wire Line
 	4450 1800 4750 1800
 $Comp
@@ -272,7 +218,7 @@ F 3 "" H 2850 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 2400 2850 2550
+	2850 2400 2850 2500
 Text GLabel 1800 1400 0    50   Input ~ 0
 VIN
 Connection ~ 4450 1800
@@ -284,8 +230,6 @@ Wire Wire Line
 Connection ~ 2850 2400
 NoConn ~ 2350 1600
 Connection ~ 3750 2400
-Wire Wire Line
-	2850 2400 2850 2150
 Wire Wire Line
 	3750 2400 2850 2400
 Wire Wire Line
@@ -735,8 +679,6 @@ Wire Wire Line
 Connection ~ 4000 5100
 Wire Wire Line
 	1050 4650 1050 5100
-Wire Wire Line
-	1050 5100 1900 5100
 Connection ~ 2300 5100
 $Comp
 L power:GND #PWR?
@@ -820,15 +762,6 @@ Wire Wire Line
 Connection ~ 4000 3600
 Wire Wire Line
 	4000 3600 3150 3600
-Text GLabel 1750 4900 0    50   Input ~ 0
-SPI_MISO
-Wire Wire Line
-	1750 4900 1900 4900
-Wire Wire Line
-	1900 4900 1900 5100
-Connection ~ 1900 5100
-Wire Wire Line
-	1900 5100 2300 5100
 Text GLabel 1750 4450 0    50   Input ~ 0
 SPI_SCK
 Text GLabel 3450 4450 0    50   Input ~ 0
@@ -838,10 +771,10 @@ SPI_MOSI
 Text GLabel 3450 4550 0    50   Input ~ 0
 SPI_MOSI
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0103
 U 1 1 600D52AF
 P 5250 6300
-F 0 "#PWR?" H 5250 6150 50  0001 C CNN
+F 0 "#PWR0103" H 5250 6150 50  0001 C CNN
 F 1 "+3V3" H 5265 6473 50  0000 C CNN
 F 2 "" H 5250 6300 50  0001 C CNN
 F 3 "" H 5250 6300 50  0001 C CNN
@@ -849,10 +782,10 @@ F 3 "" H 5250 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0105
 U 1 1 600D6FEA
 P 8600 3650
-F 0 "#PWR?" H 8600 3500 50  0001 C CNN
+F 0 "#PWR0105" H 8600 3500 50  0001 C CNN
 F 1 "+3V3" H 8615 3823 50  0000 C CNN
 F 2 "" H 8600 3650 50  0001 C CNN
 F 3 "" H 8600 3650 50  0001 C CNN
@@ -860,10 +793,10 @@ F 3 "" H 8600 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0107
 U 1 1 600D7AC4
 P 3150 3450
-F 0 "#PWR?" H 3150 3300 50  0001 C CNN
+F 0 "#PWR0107" H 3150 3300 50  0001 C CNN
 F 1 "+3V3" H 3165 3623 50  0000 C CNN
 F 2 "" H 3150 3450 50  0001 C CNN
 F 3 "" H 3150 3450 50  0001 C CNN
@@ -871,10 +804,10 @@ F 3 "" H 3150 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 600E45EF
 P 7800 5450
-F 0 "R?" H 7550 5500 50  0000 L CNN
+F 0 "R2" H 7550 5500 50  0000 L CNN
 F 1 "3K 1%" H 7450 5400 50  0000 L CNN
 F 2 "" V 7730 5450 50  0001 C CNN
 F 3 "~" H 7800 5450 50  0001 C CNN
@@ -882,10 +815,10 @@ F 3 "~" H 7800 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R3
 U 1 1 600E4D4D
 P 7800 5950
-F 0 "R?" H 7550 6000 50  0000 L CNN
+F 0 "R3" H 7550 6000 50  0000 L CNN
 F 1 "470R 1%" H 7350 5900 50  0000 L CNN
 F 2 "" V 7730 5950 50  0001 C CNN
 F 3 "~" H 7800 5950 50  0001 C CNN
@@ -893,10 +826,10 @@ F 3 "~" H 7800 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Switching:LM2574N-3.3 U?
+L Regulator_Switching:LM2574N-3.3 U2
 U 1 1 600E5721
 P 3500 6200
-F 0 "U?" H 3500 6567 50  0000 C CNN
+F 0 "U2" H 3500 6567 50  0000 C CNN
 F 1 "LM2574N-3.3" H 3500 6476 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 3100 6550 50  0001 L CIN
 F 3 "http://www.national.com/ds/LM/LM2574.pdf" H 3500 6200 50  0001 C CNN
@@ -926,4 +859,36 @@ Wire Wire Line
 Connection ~ 3600 7000
 Wire Wire Line
 	3600 7000 4450 7000
+Wire Wire Line
+	7800 2000 7800 2400
+Wire Wire Line
+	2850 2000 2850 2400
+Wire Wire Line
+	2350 1400 2050 1400
+Wire Wire Line
+	2050 1550 2050 1400
+Connection ~ 2050 1400
+Wire Wire Line
+	2050 1400 1800 1400
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5FF5E115
+P 2850 2500
+F 0 "#FLG0101" H 2850 2575 50  0001 C CNN
+F 1 "PWR_FLAG" V 2850 2628 50  0000 L CNN
+F 2 "" H 2850 2500 50  0001 C CNN
+F 3 "~" H 2850 2500 50  0001 C CNN
+	1    2850 2500
+	0    1    1    0   
+$EndComp
+Connection ~ 2850 2500
+Wire Wire Line
+	2850 2500 2850 2550
+Wire Wire Line
+	1750 4900 1900 4900
+Text GLabel 1750 4900 0    50   Input ~ 0
+SPI_MISO
+Wire Wire Line
+	1050 5100 2300 5100
+NoConn ~ 1900 4900
 $EndSCHEMATC

@@ -26,8 +26,6 @@ F 3 "http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf" H 7200 3100 50  0001 C
 $EndComp
 Wire Wire Line
 	6500 3900 6500 4300
-Wire Wire Line
-	5750 4300 5750 4500
 $Comp
 L power:GND #PWR020
 U 1 1 60975ABB
@@ -100,8 +98,6 @@ Wire Wire Line
 	5050 2450 5050 2250
 Connection ~ 5050 2450
 Wire Wire Line
-	5750 4300 5050 4300
-Wire Wire Line
 	5050 4300 5050 4200
 Wire Wire Line
 	6100 3000 5650 3000
@@ -152,20 +148,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 3700 6100 3700
 $Comp
-L power:+5V #PWR?
-U 1 1 5FF50771
-P 4300 3900
-AR Path="/5FF50771" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/5FF50771" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/5FF50771" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 4300 3750 50  0001 C CNN
-F 1 "+5V" H 4315 4073 50  0000 C CNN
-F 2 "" H 4300 3900 50  0001 C CNN
-F 3 "" H 4300 3900 50  0001 C CNN
-	1    4300 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FF50899
 P 3950 4150
@@ -193,10 +175,6 @@ Wire Wire Line
 	4550 4000 4300 4000
 Wire Wire Line
 	4300 4000 4300 3900
-Connection ~ 4300 3900
-Wire Wire Line
-	6500 4300 5750 4300
-Connection ~ 5750 4300
 Text GLabel 4350 3300 0    50   Input ~ 0
 I2C_SCL
 Text GLabel 4350 3400 0    50   Input ~ 0
@@ -208,8 +186,8 @@ L power:+3V3 #PWR?
 U 1 1 600D0A68
 P 5050 2250
 AR Path="/604E5285/600D0A68" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/600D0A68" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5050 2100 50  0001 C CNN
+AR Path="/6096B205/600D0A68" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H 5050 2100 50  0001 C CNN
 F 1 "+3V3" H 5065 2423 50  0000 C CNN
 F 2 "" H 5050 2250 50  0001 C CNN
 F 3 "" H 5050 2250 50  0001 C CNN
@@ -221,8 +199,8 @@ L power:+3V3 #PWR?
 U 1 1 600D354A
 P 6500 2200
 AR Path="/604E5285/600D354A" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/600D354A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 6500 2050 50  0001 C CNN
+AR Path="/6096B205/600D354A" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 6500 2050 50  0001 C CNN
 F 1 "+3V3" H 6515 2373 50  0000 C CNN
 F 2 "" H 6500 2200 50  0001 C CNN
 F 3 "" H 6500 2200 50  0001 C CNN
@@ -238,8 +216,6 @@ Wire Wire Line
 Connection ~ 6500 4300
 Wire Wire Line
 	6900 2800 7300 2800
-Wire Wire Line
-	6900 2500 7300 2500
 Text Notes 7350 2650 0    50   ~ 0
 TODO!!!
 Wire Wire Line
@@ -254,4 +230,29 @@ Text GLabel 5850 2600 0    50   Input ~ 0
 LCD_RW
 Text GLabel 5850 2700 0    50   Input ~ 0
 LCD_REGSEL
+Wire Wire Line
+	6900 2500 7300 2500
+Wire Wire Line
+	5050 4300 5750 4300
+Wire Wire Line
+	5750 4500 5750 4300
+Connection ~ 5750 4300
+Wire Wire Line
+	5750 4300 6500 4300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FF66CA5
+P 4300 3850
+AR Path="/604E5285/5FF66CA5" Ref="#PWR?"  Part="1" 
+AR Path="/6096B205/5FF66CA5" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 4300 3700 50  0001 C CNN
+F 1 "+3V3" H 4315 4023 50  0000 C CNN
+F 2 "" H 4300 3850 50  0001 C CNN
+F 3 "" H 4300 3850 50  0001 C CNN
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3850 4300 3900
+Connection ~ 4300 3900
 $EndSCHEMATC
