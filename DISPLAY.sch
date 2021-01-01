@@ -28,10 +28,6 @@ Wire Wire Line
 	4900 6100 4900 6500
 Wire Wire Line
 	4150 6500 4150 6700
-Wire Wire Line
-	5300 5000 5400 5000
-Wire Wire Line
-	5300 5100 5400 5100
 $Comp
 L power:GND #PWR020
 U 1 1 60975ABB
@@ -392,4 +388,17 @@ F 3 "" H 4900 4400 50  0001 C CNN
 	1    4900 4400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5700 5100 5700 6500
+Wire Wire Line
+	5700 6500 4900 6500
+Wire Wire Line
+	5300 5100 5700 5100
+Connection ~ 4900 6500
+Wire Wire Line
+	5300 5000 5700 5000
+Wire Wire Line
+	5300 4700 5700 4700
+Text Notes 5750 4850 0    50   ~ 0
+TODO!!!
 $EndSCHEMATC
