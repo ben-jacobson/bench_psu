@@ -365,32 +365,6 @@ F 3 "~" H 2050 1700 50  0001 C CNN
 	1    2050 1700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60544693
-P 5250 6300
-AR Path="/60544693" Ref="#PWR?"  Part="1" 
-AR Path="/604D3BA3/60544693" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 5250 6150 50  0001 C CNN
-F 1 "+5V" H 5265 6473 50  0000 C CNN
-F 2 "" H 5250 6300 50  0001 C CNN
-F 3 "" H 5250 6300 50  0001 C CNN
-	1    5250 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Switching:LM2674N-5.0 U?
-U 1 1 60544699
-P 3500 6300
-AR Path="/60544699" Ref="U?"  Part="1" 
-AR Path="/604D3BA3/60544699" Ref="U2"  Part="1" 
-F 0 "U2" H 3500 6767 50  0000 C CNN
-F 1 "LM2674N-5.0" H 3500 6676 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3550 5950 50  0001 L CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm2674.pdf" H 3500 6300 50  0001 C CNN
-	1    3500 6300
-	1    0    0    -1  
-$EndComp
 Connection ~ 5250 6500
 $Comp
 L power:PWR_FLAG #5V?
@@ -415,8 +389,8 @@ U 1 1 605446A8
 P 4650 6500
 AR Path="/605446A8" Ref="L?"  Part="1" 
 AR Path="/604D3BA3/605446A8" Ref="L1"  Part="1" 
-F 0 "L1" V 4750 6600 50  0000 C CNN
-F 1 "100uH" V 4750 6400 50  0000 C CNN
+F 0 "L1" V 4850 6500 50  0000 C CNN
+F 1 "330uH" V 4750 6500 50  0000 C CNN
 F 2 "" H 4650 6500 50  0001 C CNN
 F 3 "~" H 4650 6500 50  0001 C CNN
 	1    4650 6500
@@ -441,13 +415,6 @@ Connection ~ 2350 6100
 Wire Wire Line
 	2350 6100 2150 6100
 Wire Wire Line
-	4100 6300 4000 6300
-Wire Wire Line
-	4450 6300 4400 6300
-Wire Wire Line
-	4450 6500 4450 6300
-Connection ~ 4450 6500
-Wire Wire Line
 	4450 6600 4450 6500
 Wire Wire Line
 	4450 7000 4900 7000
@@ -455,13 +422,11 @@ Connection ~ 4450 7000
 Wire Wire Line
 	4450 7000 4450 6900
 Wire Wire Line
-	3500 7000 4450 7000
-Wire Wire Line
-	4000 6500 4450 6500
+	3500 7000 3600 7000
 Wire Wire Line
 	2350 7000 2350 6700
 Wire Wire Line
-	3500 7000 2350 7000
+	3500 7000 2850 7000
 Wire Wire Line
 	4900 7000 4900 6900
 Wire Wire Line
@@ -476,7 +441,7 @@ P 4900 6750
 AR Path="/605446C8" Ref="C?"  Part="1" 
 AR Path="/604D3BA3/605446C8" Ref="C3"  Part="1" 
 F 0 "C3" H 5050 6800 50  0000 L CNN
-F 1 "100uF" H 5050 6700 50  0000 L CNN
+F 1 "220uF" H 5050 6700 50  0000 L CNN
 F 2 "" H 4938 6600 50  0001 C CNN
 F 3 "~" H 4900 6750 50  0001 C CNN
 	1    4900 6750
@@ -496,27 +461,13 @@ F 3 "~" H 4450 6750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C?
-U 1 1 605446D4
-P 4250 6300
-AR Path="/605446D4" Ref="C?"  Part="1" 
-AR Path="/604D3BA3/605446D4" Ref="C2"  Part="1" 
-F 0 "C2" V 4350 6350 50  0000 L CNN
-F 1 "10nF" V 4350 6050 50  0000 L CNN
-F 2 "" H 4288 6150 50  0001 C CNN
-F 3 "~" H 4250 6300 50  0001 C CNN
-	1    4250 6300
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 3000 6300
-$Comp
 L Device:CP C?
 U 1 1 605446DB
 P 2350 6550
 AR Path="/605446DB" Ref="C?"  Part="1" 
 AR Path="/604D3BA3/605446DB" Ref="C1"  Part="1" 
 F 0 "C1" H 2050 6600 50  0000 L CNN
-F 1 "100uF" H 2000 6500 50  0000 L CNN
+F 1 "22uF" H 2000 6500 50  0000 L CNN
 F 2 "" H 2388 6400 50  0001 C CNN
 F 3 "~" H 2350 6550 50  0001 C CNN
 	1    2350 6550
@@ -536,13 +487,9 @@ F 3 "" H 3500 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 6700 3500 7000
-Wire Wire Line
 	2350 6100 2350 6400
 Wire Wire Line
 	3000 6100 2350 6100
-Text Notes 3900 5800 0    50   ~ 0
-5V PSU
 Text Notes 9100 3600 0    50   ~ 0
 Voltage Sensors
 Text GLabel 4750 1800 2    50   Input ~ 0
@@ -605,19 +552,6 @@ F 3 "" H 8600 4600 50  0001 C CNN
 	1    8600 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 608CCC63
-P 8600 3650
-AR Path="/608CCC63" Ref="#PWR?"  Part="1" 
-AR Path="/604D3BA3/608CCC63" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 8600 3500 50  0001 C CNN
-F 1 "+5V" H 8615 3823 50  0000 C CNN
-F 2 "" H 8600 3650 50  0001 C CNN
-F 3 "" H 8600 3650 50  0001 C CNN
-	1    8600 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8400 4050 7800 4050
 $Comp
@@ -625,7 +559,7 @@ L Device:R R12
 U 1 1 608D250E
 P 7800 3800
 F 0 "R12" H 7550 3850 50  0000 L CNN
-F 1 "4K7 1%" H 7450 3750 50  0000 L CNN
+F 1 "3K 1%" H 7450 3750 50  0000 L CNN
 F 2 "" V 7730 3800 50  0001 C CNN
 F 3 "~" H 7800 3800 50  0001 C CNN
 	1    7800 3800
@@ -636,7 +570,7 @@ L Device:R R13
 U 1 1 608D2B78
 P 7800 4300
 F 0 "R13" H 7550 4350 50  0000 L CNN
-F 1 "1K2 1%" H 7450 4250 50  0000 L CNN
+F 1 "470R 1%" H 7350 4250 50  0000 L CNN
 F 2 "" V 7730 4300 50  0001 C CNN
 F 3 "~" H 7800 4300 50  0001 C CNN
 	1    7800 4300
@@ -651,28 +585,6 @@ Wire Wire Line
 	8150 5900 8400 5900
 Wire Wire Line
 	8400 5700 7800 5700
-$Comp
-L Device:R R14
-U 1 1 608EE63F
-P 7800 5450
-F 0 "R14" H 7550 5500 50  0000 L CNN
-F 1 "4K7 1%" H 7450 5400 50  0000 L CNN
-F 2 "" V 7730 5450 50  0001 C CNN
-F 3 "~" H 7800 5450 50  0001 C CNN
-	1    7800 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 608EE649
-P 7800 5950
-F 0 "R15" H 7550 6000 50  0000 L CNN
-F 1 "1K2 1%" H 7450 5900 50  0000 L CNN
-F 2 "" V 7730 5950 50  0001 C CNN
-F 3 "~" H 7800 5950 50  0001 C CNN
-	1    7800 5950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7800 5600 7800 5700
 Wire Wire Line
@@ -731,64 +643,10 @@ Wire Wire Line
 	7700 5150 7800 5150
 Wire Wire Line
 	7800 5150 7800 5300
-$Comp
-L Device:R R2
-U 1 1 6094E131
-P 6350 4400
-F 0 "R2" H 6420 4446 50  0000 L CNN
-F 1 "4K7 1%" H 6420 4355 50  0000 L CNN
-F 2 "" V 6280 4400 50  0001 C CNN
-F 3 "~" H 6350 4400 50  0001 C CNN
-	1    6350 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 6094E13B
-P 6350 4900
-F 0 "R3" H 6420 4946 50  0000 L CNN
-F 1 "1K2 1%" H 6420 4855 50  0000 L CNN
-F 2 "" V 6280 4900 50  0001 C CNN
-F 3 "~" H 6350 4900 50  0001 C CNN
-	1    6350 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6094E148
-P 6350 5200
-AR Path="/6094E148" Ref="#PWR?"  Part="1" 
-AR Path="/604D3BA3/6094E148" Ref="#PWR01"  Part="1" 
-F 0 "#PWR01" H 6350 4950 50  0001 C CNN
-F 1 "GND" H 6355 5027 50  0000 C CNN
-F 2 "" H 6350 5200 50  0001 C CNN
-F 3 "" H 6350 5200 50  0001 C CNN
-	1    6350 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 5200 6350 5050
-Wire Wire Line
-	6250 4150 6350 4150
-Wire Wire Line
-	6350 4150 6350 4250
-Text GLabel 6250 4150 0    50   Input ~ 0
-VIN
-Text GLabel 6650 4650 2    50   Input ~ 0
-AREF
-Wire Wire Line
-	6350 4550 6350 4650
-Wire Wire Line
-	6650 4650 6350 4650
-Connection ~ 6350 4650
-Wire Wire Line
-	6350 4650 6350 4750
 Wire Wire Line
 	3500 1250 3500 1400
 Wire Wire Line
 	3350 1400 3500 1400
-Text GLabel 3450 4550 0    50   Input ~ 0
-MOSI_SDA
 Text Notes 1150 3550 0    50   ~ 0
 Voltage Setting
 Text GLabel 1750 4650 0    50   Input ~ 0
@@ -817,12 +675,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/11195c.pdf" H 4000 4550 50 
 	1    4000 4550
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 4450 0    50   Input ~ 0
-SCK_SCL
-Text GLabel 3450 4450 0    50   Input ~ 0
-SCK_SCL
-Text GLabel 1750 4550 0    50   Input ~ 0
-MOSI_SDA
 Wire Wire Line
 	1750 4450 1900 4450
 Wire Wire Line
@@ -884,7 +736,7 @@ Connection ~ 4000 5100
 Wire Wire Line
 	1050 4650 1050 5100
 Wire Wire Line
-	1050 5100 2300 5100
+	1050 5100 1900 5100
 Connection ~ 2300 5100
 $Comp
 L power:GND #PWR?
@@ -897,19 +749,6 @@ F 1 "GND" H 3155 5027 50  0000 C CNN
 F 2 "" H 3150 5200 50  0001 C CNN
 F 3 "" H 3150 5200 50  0001 C CNN
 	1    3150 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 6007BD1F
-P 3150 3450
-AR Path="/6007BD1F" Ref="#PWR?"  Part="1" 
-AR Path="/604D3BA3/6007BD1F" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 3150 3300 50  0001 C CNN
-F 1 "+5V" H 3165 3623 50  0000 C CNN
-F 2 "" H 3150 3450 50  0001 C CNN
-F 3 "" H 3150 3450 50  0001 C CNN
-	1    3150 3450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -981,4 +820,110 @@ Wire Wire Line
 Connection ~ 4000 3600
 Wire Wire Line
 	4000 3600 3150 3600
+Text GLabel 1750 4900 0    50   Input ~ 0
+SPI_MISO
+Wire Wire Line
+	1750 4900 1900 4900
+Wire Wire Line
+	1900 4900 1900 5100
+Connection ~ 1900 5100
+Wire Wire Line
+	1900 5100 2300 5100
+Text GLabel 1750 4450 0    50   Input ~ 0
+SPI_SCK
+Text GLabel 3450 4450 0    50   Input ~ 0
+SPI_SCK
+Text GLabel 1750 4550 0    50   Input ~ 0
+SPI_MOSI
+Text GLabel 3450 4550 0    50   Input ~ 0
+SPI_MOSI
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600D52AF
+P 5250 6300
+F 0 "#PWR?" H 5250 6150 50  0001 C CNN
+F 1 "+3V3" H 5265 6473 50  0000 C CNN
+F 2 "" H 5250 6300 50  0001 C CNN
+F 3 "" H 5250 6300 50  0001 C CNN
+	1    5250 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600D6FEA
+P 8600 3650
+F 0 "#PWR?" H 8600 3500 50  0001 C CNN
+F 1 "+3V3" H 8615 3823 50  0000 C CNN
+F 2 "" H 8600 3650 50  0001 C CNN
+F 3 "" H 8600 3650 50  0001 C CNN
+	1    8600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600D7AC4
+P 3150 3450
+F 0 "#PWR?" H 3150 3300 50  0001 C CNN
+F 1 "+3V3" H 3165 3623 50  0000 C CNN
+F 2 "" H 3150 3450 50  0001 C CNN
+F 3 "" H 3150 3450 50  0001 C CNN
+	1    3150 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 600E45EF
+P 7800 5450
+F 0 "R?" H 7550 5500 50  0000 L CNN
+F 1 "3K 1%" H 7450 5400 50  0000 L CNN
+F 2 "" V 7730 5450 50  0001 C CNN
+F 3 "~" H 7800 5450 50  0001 C CNN
+	1    7800 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 600E4D4D
+P 7800 5950
+F 0 "R?" H 7550 6000 50  0000 L CNN
+F 1 "470R 1%" H 7350 5900 50  0000 L CNN
+F 2 "" V 7730 5950 50  0001 C CNN
+F 3 "~" H 7800 5950 50  0001 C CNN
+	1    7800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:LM2574N-3.3 U?
+U 1 1 600E5721
+P 3500 6200
+F 0 "U?" H 3500 6567 50  0000 C CNN
+F 1 "LM2574N-3.3" H 3500 6476 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 3100 6550 50  0001 L CIN
+F 3 "http://www.national.com/ds/LM/LM2574.pdf" H 3500 6200 50  0001 C CNN
+	1    3500 6200
+	1    0    0    -1  
+$EndComp
+Text Notes 3900 5800 0    50   ~ 0
+3V3 PSU
+Wire Wire Line
+	4000 6300 4250 6300
+Wire Wire Line
+	4250 6300 4250 6500
+Wire Wire Line
+	4250 6500 4450 6500
+Connection ~ 4450 6500
+Wire Wire Line
+	3000 6300 2850 6300
+Wire Wire Line
+	2850 6300 2850 7000
+Connection ~ 2850 7000
+Wire Wire Line
+	2850 7000 2350 7000
+Wire Wire Line
+	3500 6500 3500 7000
+Wire Wire Line
+	3600 6500 3600 7000
+Connection ~ 3600 7000
+Wire Wire Line
+	3600 7000 4450 7000
 $EndSCHEMATC

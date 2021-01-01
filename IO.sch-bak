@@ -26,14 +26,8 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Shee
 	1    9000 2250
 	1    0    0    -1  
 $EndComp
-Text GLabel 8300 1850 0    50   Input ~ 0
-RST
 Wire Wire Line
 	8500 1850 8300 1850
-Text GLabel 8300 1950 0    50   Input ~ 0
-SCK_SCL
-Text GLabel 8300 2050 0    50   Input ~ 0
-MOSI_SDA
 Wire Wire Line
 	8500 1950 8300 1950
 Wire Wire Line
@@ -128,19 +122,6 @@ Wire Wire Line
 Wire Wire Line
 	9000 1100 9000 900 
 Connection ~ 9000 1100
-$Comp
-L power:+5V #PWR?
-U 1 1 60565429
-P 9000 900
-AR Path="/60565429" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/60565429" Ref="#PWR0119"  Part="1" 
-F 0 "#PWR0119" H 9000 750 50  0001 C CNN
-F 1 "+5V" H 9015 1073 50  0000 C CNN
-F 2 "" H 9000 900 50  0001 C CNN
-F 3 "" H 9000 900 50  0001 C CNN
-	1    9000 900 
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9500 1850 9800 1850
 Wire Wire Line
@@ -153,19 +134,6 @@ Wire Wire Line
 	9500 2250 9800 2250
 Wire Wire Line
 	9500 2350 9800 2350
-$Comp
-L power:+5V #PWR?
-U 1 1 605B59EA
-P 3000 1400
-AR Path="/605B59EA" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/605B59EA" Ref="#PWR0121"  Part="1" 
-F 0 "#PWR0121" H 3000 1250 50  0001 C CNN
-F 1 "+5V" H 3015 1573 50  0000 C CNN
-F 2 "" H 3000 1400 50  0001 C CNN
-F 3 "" H 3000 1400 50  0001 C CNN
-	1    3000 1400
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 605B5A07
@@ -205,51 +173,21 @@ F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 7850 5100 50  0001 C
 	2    7850 5100
 	1    0    0    -1  
 $EndComp
-$Comp
-L 4xxx:4013 U?
-U 3 1 605B5AC9
-P 6950 2000
-AR Path="/605B5AC9" Ref="U?"  Part="3" 
-AR Path="/604E5285/605B5AC9" Ref="U7"  Part="3" 
-F 0 "U7" H 7180 2046 50  0000 L CNN
-F 1 "4013" H 7180 1955 50  0000 L CNN
-F 2 "" H 6950 2000 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 6950 2000 50  0001 C CNN
-	3    6950 2000
-	1    0    0    -1  
-$EndComp
 Text Notes 2250 1150 0    50   ~ 0
 CH1 Voltage Adjustment - Rotary Encoder\n
 $Comp
-L power:+5V #PWR?
-U 1 1 605B5AD1
-P 6950 1500
-AR Path="/605B5AD1" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/605B5AD1" Ref="#PWR0124"  Part="1" 
-F 0 "#PWR0124" H 6950 1350 50  0001 C CNN
-F 1 "+5V" H 6965 1673 50  0000 C CNN
-F 2 "" H 6950 1500 50  0001 C CNN
-F 3 "" H 6950 1500 50  0001 C CNN
-	1    6950 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 1500 6950 1550
-$Comp
 L power:GND #PWR?
 U 1 1 605B5AD8
-P 6950 2500
+P 6950 2600
 AR Path="/605B5AD8" Ref="#PWR?"  Part="1" 
 AR Path="/604E5285/605B5AD8" Ref="#PWR0125"  Part="1" 
-F 0 "#PWR0125" H 6950 2250 50  0001 C CNN
-F 1 "GND" H 6955 2327 50  0000 C CNN
-F 2 "" H 6950 2500 50  0001 C CNN
-F 3 "" H 6950 2500 50  0001 C CNN
-	1    6950 2500
+F 0 "#PWR0125" H 6950 2350 50  0001 C CNN
+F 1 "GND" H 6955 2427 50  0000 C CNN
+F 2 "" H 6950 2600 50  0001 C CNN
+F 3 "" H 6950 2600 50  0001 C CNN
+	1    6950 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6950 2400 6950 2450
 $Comp
 L Device:C C?
 U 1 1 605B5ADF
@@ -263,20 +201,6 @@ F 3 "~" H 6550 1950 50  0001 C CNN
 	1    6550 1950
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	6550 1550 6950 1550
-Connection ~ 6950 1550
-Wire Wire Line
-	6950 1550 6950 1600
-Wire Wire Line
-	6550 2450 6950 2450
-Connection ~ 6950 2450
-Wire Wire Line
-	6950 2450 6950 2500
-Wire Wire Line
-	6550 1800 6550 1550
-Wire Wire Line
-	6550 2100 6550 2450
 $Comp
 L 74xx:74HC14 U?
 U 1 1 605B5AED
@@ -433,8 +357,6 @@ Wire Wire Line
 Connection ~ 2850 1550
 Wire Wire Line
 	2850 1550 3000 1550
-Wire Wire Line
-	3000 1550 3000 1400
 Connection ~ 3000 1550
 Wire Wire Line
 	3000 1550 3350 1550
@@ -510,19 +432,6 @@ Text GLabel 1350 2050 0    50   Input ~ 0
 CH1_VADJ_A
 Text GLabel 1350 2150 0    50   Input ~ 0
 CH1_VADJ_B
-$Comp
-L power:+5V #PWR?
-U 1 1 606CCC08
-P 3000 4650
-AR Path="/606CCC08" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/606CCC08" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 3000 4500 50  0001 C CNN
-F 1 "+5V" H 3015 4823 50  0000 C CNN
-F 2 "" H 3000 4650 50  0001 C CNN
-F 3 "" H 3000 4650 50  0001 C CNN
-	1    3000 4650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 606CD008
@@ -778,19 +687,6 @@ F 3 "~" H 5050 2050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 60790073
-P 5500 1350
-AR Path="/60790073" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/60790073" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 5500 1200 50  0001 C CNN
-F 1 "+5V" H 5515 1523 50  0000 C CNN
-F 2 "" H 5500 1350 50  0001 C CNN
-F 3 "" H 5500 1350 50  0001 C CNN
-	1    5500 1350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 6079C252
 P 5500 2600
@@ -915,4 +811,98 @@ Text GLabel 9800 2350 2    50   Input ~ 0
 CH2_FineCourse
 NoConn ~ 9500 2450
 NoConn ~ 9500 2550
+Text GLabel 8300 1950 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 8300 2050 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 8300 1850 0    50   Input ~ 0
+RESET
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600ABCA0
+P 6950 1350
+F 0 "#PWR?" H 6950 1200 50  0001 C CNN
+F 1 "+3V3" H 6965 1523 50  0000 C CNN
+F 2 "" H 6950 1350 50  0001 C CNN
+F 3 "" H 6950 1350 50  0001 C CNN
+	1    6950 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1500 6550 1500
+Wire Wire Line
+	6950 1350 6950 1500
+Wire Wire Line
+	6550 1500 6550 1800
+$Comp
+L 4xxx:4013 U?
+U 3 1 605B5AC9
+P 6950 2000
+AR Path="/605B5AC9" Ref="U?"  Part="3" 
+AR Path="/604E5285/605B5AC9" Ref="U7"  Part="3" 
+F 0 "U7" H 7180 2046 50  0000 L CNN
+F 1 "4013" H 7180 1955 50  0000 L CNN
+F 2 "" H 6950 2000 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 6950 2000 50  0001 C CNN
+	3    6950 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1600 6950 1500
+Connection ~ 6950 1500
+Wire Wire Line
+	6950 2400 6950 2500
+Wire Wire Line
+	6550 2500 6950 2500
+Wire Wire Line
+	6550 2100 6550 2500
+Connection ~ 6950 2500
+Wire Wire Line
+	6950 2500 6950 2600
+Wire Wire Line
+	3000 1550 3000 1400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600C9E7A
+P 3000 1400
+F 0 "#PWR?" H 3000 1250 50  0001 C CNN
+F 1 "+3V3" H 3015 1573 50  0000 C CNN
+F 2 "" H 3000 1400 50  0001 C CNN
+F 3 "" H 3000 1400 50  0001 C CNN
+	1    3000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600CA50D
+P 5500 1350
+F 0 "#PWR?" H 5500 1200 50  0001 C CNN
+F 1 "+3V3" H 5515 1523 50  0000 C CNN
+F 2 "" H 5500 1350 50  0001 C CNN
+F 3 "" H 5500 1350 50  0001 C CNN
+	1    5500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600CB0A8
+P 9000 900
+F 0 "#PWR?" H 9000 750 50  0001 C CNN
+F 1 "+3V3" H 9015 1073 50  0000 C CNN
+F 2 "" H 9000 900 50  0001 C CNN
+F 3 "" H 9000 900 50  0001 C CNN
+	1    9000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600CB5E9
+P 3000 4650
+F 0 "#PWR?" H 3000 4500 50  0001 C CNN
+F 1 "+3V3" H 3015 4823 50  0000 C CNN
+F 2 "" H 3000 4650 50  0001 C CNN
+F 3 "" H 3000 4650 50  0001 C CNN
+	1    3000 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

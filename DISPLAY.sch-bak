@@ -43,17 +43,6 @@ F 3 "" H 4150 6700 50  0001 C CNN
 	1    4150 6700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR021
-U 1 1 60976139
-P 4900 4400
-F 0 "#PWR021" H 4900 4250 50  0001 C CNN
-F 1 "+5V" H 4915 4573 50  0000 C CNN
-F 2 "" H 4900 4400 50  0001 C CNN
-F 3 "" H 4900 4400 50  0001 C CNN
-	1    4900 4400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4900 4400 4900 4500
 $Comp
@@ -70,14 +59,8 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Shee
 	1    3450 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 2750 5400 0    50   Input ~ 0
-RST
 Wire Wire Line
 	2950 5400 2750 5400
-Text GLabel 2750 5500 0    50   Input ~ 0
-SCK_SCL
-Text GLabel 2750 5600 0    50   Input ~ 0
-MOSI_SDA
 Wire Wire Line
 	2950 5500 2750 5500
 Wire Wire Line
@@ -120,28 +103,8 @@ Wire Wire Line
 Wire Wire Line
 	3450 4650 3450 4450
 Connection ~ 3450 4650
-$Comp
-L power:+5V #PWR?
-U 1 1 5FEF98F4
-P 3450 4450
-AR Path="/5FEF98F4" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/5FEF98F4" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/5FEF98F4" Ref="#PWR019"  Part="1" 
-F 0 "#PWR019" H 3450 4300 50  0001 C CNN
-F 1 "+5V" H 3465 4623 50  0000 C CNN
-F 2 "" H 3450 4450 50  0001 C CNN
-F 3 "" H 3450 4450 50  0001 C CNN
-	1    3450 4450
-	1    0    0    -1  
-$EndComp
-Text GLabel 2750 2750 0    50   Input ~ 0
-RST
 Wire Wire Line
 	2950 2750 2750 2750
-Text GLabel 2750 2850 0    50   Input ~ 0
-SCK_SCL
-Text GLabel 2750 2950 0    50   Input ~ 0
-MOSI_SDA
 Wire Wire Line
 	2950 2850 2750 2850
 Wire Wire Line
@@ -228,20 +191,6 @@ Wire Wire Line
 Wire Wire Line
 	3450 2000 3450 1800
 Connection ~ 3450 2000
-$Comp
-L power:+5V #PWR?
-U 1 1 5FEFB8FA
-P 3450 1800
-AR Path="/5FEFB8FA" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/5FEFB8FA" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/5FEFB8FA" Ref="#PWR017"  Part="1" 
-F 0 "#PWR017" H 3450 1650 50  0001 C CNN
-F 1 "+5V" H 3465 1973 50  0000 C CNN
-F 2 "" H 3450 1800 50  0001 C CNN
-F 3 "" H 3450 1800 50  0001 C CNN
-	1    3450 1800
-	1    0    0    -1  
-$EndComp
 NoConn ~ 3950 3350
 NoConn ~ 3950 3450
 NoConn ~ 3950 3250
@@ -392,4 +341,55 @@ Connection ~ 2700 6100
 Wire Wire Line
 	4900 6500 4150 6500
 Connection ~ 4150 6500
+Text GLabel 2750 5500 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 2750 5600 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 2750 2850 0    50   Input ~ 0
+I2C_SCL
+Text GLabel 2750 2950 0    50   Input ~ 0
+I2C_SDA
+Text GLabel 2750 5400 0    50   Input ~ 0
+RESET
+Text GLabel 2750 2750 0    50   Input ~ 0
+RESET
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600CDA04
+P 3450 1800
+AR Path="/604E5285/600CDA04" Ref="#PWR?"  Part="1" 
+AR Path="/6096B205/600CDA04" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3450 1650 50  0001 C CNN
+F 1 "+3V3" H 3465 1973 50  0000 C CNN
+F 2 "" H 3450 1800 50  0001 C CNN
+F 3 "" H 3450 1800 50  0001 C CNN
+	1    3450 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600D0A68
+P 3450 4450
+AR Path="/604E5285/600D0A68" Ref="#PWR?"  Part="1" 
+AR Path="/6096B205/600D0A68" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3450 4300 50  0001 C CNN
+F 1 "+3V3" H 3465 4623 50  0000 C CNN
+F 2 "" H 3450 4450 50  0001 C CNN
+F 3 "" H 3450 4450 50  0001 C CNN
+	1    3450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 600D354A
+P 4900 4400
+AR Path="/604E5285/600D354A" Ref="#PWR?"  Part="1" 
+AR Path="/6096B205/600D354A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4900 4250 50  0001 C CNN
+F 1 "+3V3" H 4915 4573 50  0000 C CNN
+F 2 "" H 4900 4400 50  0001 C CNN
+F 3 "" H 4900 4400 50  0001 C CNN
+	1    4900 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
