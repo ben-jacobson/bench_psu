@@ -382,17 +382,8 @@ CH2_VOLT_SENSE
 NoConn ~ 6850 2750
 NoConn ~ 6850 2850
 NoConn ~ 6850 2950
-NoConn ~ 6850 3550
-NoConn ~ 6850 3650
-NoConn ~ 6850 3750
 NoConn ~ 6850 4050
 NoConn ~ 5750 3850
-NoConn ~ 5750 3750
-NoConn ~ 5750 3650
-NoConn ~ 5750 3550
-NoConn ~ 5750 3450
-NoConn ~ 5750 3250
-NoConn ~ 5750 3150
 Text GLabel 7050 3450 2    50   Input ~ 0
 V1SET_SS
 Text GLabel 7050 3350 2    50   Input ~ 0
@@ -405,4 +396,40 @@ Text GLabel 7050 3150 2    50   Input ~ 0
 SPI_MISO
 Wire Wire Line
 	6850 3150 7050 3150
+Text GLabel 7050 3750 2    50   Input ~ 0
+LCD_ENABLE
+Text GLabel 7050 3650 2    50   Input ~ 0
+LCD_RW
+Text GLabel 7050 3550 2    50   Input ~ 0
+LCD_REGSEL
+Wire Wire Line
+	6850 3750 7050 3750
+Wire Wire Line
+	7050 3650 6850 3650
+Wire Wire Line
+	7050 3550 6850 3550
+Text GLabel 5550 3250 0    50   Input ~ 0
+CH2_FineCourse
+Text GLabel 5550 3150 0    50   Input ~ 0
+CH1_FineCourse
+Text GLabel 5550 3750 0    50   Input ~ 0
+CH2_ROT_DIR
+Text GLabel 5550 3550 0    50   Input ~ 0
+CH1_ROT_DIR
+Text GLabel 5550 3650 0    50   Input ~ 0
+CH2_ROT_STEP
+Text GLabel 5550 3450 0    50   Input ~ 0
+CH1_ROT_STEP
+Wire Wire Line
+	5550 3150 5750 3150
+Wire Wire Line
+	5550 3250 5750 3250
+Wire Wire Line
+	5550 3450 5750 3450
+Wire Wire Line
+	5550 3550 5750 3550
+Wire Wire Line
+	5550 3650 5750 3650
+Wire Wire Line
+	5550 3750 5750 3750
 $EndSCHEMATC

@@ -28,10 +28,6 @@ Wire Wire Line
 	4900 6100 4900 6500
 Wire Wire Line
 	4150 6500 4150 6700
-Wire Wire Line
-	5300 5000 5400 5000
-Wire Wire Line
-	5300 5100 5400 5100
 $Comp
 L power:GND #PWR020
 U 1 1 60975ABB
@@ -104,117 +100,6 @@ Wire Wire Line
 	3450 4650 3450 4450
 Connection ~ 3450 4650
 Wire Wire Line
-	2950 2750 2750 2750
-Wire Wire Line
-	2950 2850 2750 2850
-Wire Wire Line
-	2750 2950 2950 2950
-NoConn ~ 2950 3150
-$Comp
-L power:+5V #PWR?
-U 1 1 5FEFB8D6
-P 2700 3450
-AR Path="/5FEFB8D6" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/5FEFB8D6" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/5FEFB8D6" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 2700 3300 50  0001 C CNN
-F 1 "+5V" H 2715 3623 50  0000 C CNN
-F 2 "" H 2700 3450 50  0001 C CNN
-F 3 "" H 2700 3450 50  0001 C CNN
-	1    2700 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FEFB8DC
-P 2350 3700
-AR Path="/5FEFB8DC" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/5FEFB8DC" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/5FEFB8DC" Ref="#PWR05"  Part="1" 
-F 0 "#PWR05" H 2350 3450 50  0001 C CNN
-F 1 "GND" H 2355 3527 50  0000 C CNN
-F 2 "" H 2350 3700 50  0001 C CNN
-F 3 "" H 2350 3700 50  0001 C CNN
-	1    2350 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 3750 3450 3900
-$Comp
-L power:GND #PWR?
-U 1 1 5FEFB8E3
-P 3450 3900
-AR Path="/5FEFB8E3" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/5FEFB8E3" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/5FEFB8E3" Ref="#PWR018"  Part="1" 
-F 0 "#PWR018" H 3450 3650 50  0001 C CNN
-F 1 "GND" H 3455 3727 50  0000 C CNN
-F 2 "" H 3450 3900 50  0001 C CNN
-F 3 "" H 3450 3900 50  0001 C CNN
-	1    3450 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5FEFB8E9
-P 2850 2150
-AR Path="/5FEFB8E9" Ref="C?"  Part="1" 
-AR Path="/604E5285/5FEFB8E9" Ref="C?"  Part="1" 
-AR Path="/6096B205/5FEFB8E9" Ref="C15"  Part="1" 
-F 0 "C15" V 3100 2100 50  0000 L CNN
-F 1 "0.1uF" V 3000 2050 50  0000 L CNN
-F 2 "" H 2888 2000 50  0001 C CNN
-F 3 "~" H 2850 2150 50  0001 C CNN
-	1    2850 2150
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FEFB8EF
-P 2850 2400
-AR Path="/5FEFB8EF" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/5FEFB8EF" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/5FEFB8EF" Ref="#PWR015"  Part="1" 
-F 0 "#PWR015" H 2850 2150 50  0001 C CNN
-F 1 "GND" H 2855 2227 50  0000 C CNN
-F 2 "" H 2850 2400 50  0001 C CNN
-F 3 "" H 2850 2400 50  0001 C CNN
-	1    2850 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2850 2300 2850 2400
-Wire Wire Line
-	2850 2000 3450 2000
-Wire Wire Line
-	3450 2000 3450 2550
-Wire Wire Line
-	3450 2000 3450 1800
-Connection ~ 3450 2000
-NoConn ~ 3950 3350
-NoConn ~ 3950 3450
-NoConn ~ 3950 3250
-NoConn ~ 3950 3150
-NoConn ~ 3950 3050
-Wire Wire Line
-	4500 4700 4400 4700
-Wire Wire Line
-	4400 4700 4400 2750
-Wire Wire Line
-	4500 4800 4300 4800
-Wire Wire Line
-	4300 4800 4300 2850
-Wire Wire Line
-	4500 4900 4200 4900
-Wire Wire Line
-	4200 4900 4200 2950
-Wire Wire Line
-	3950 2950 4200 2950
-Wire Wire Line
-	4300 2850 3950 2850
-Wire Wire Line
-	4400 2750 3950 2750
-Wire Wire Line
 	4150 6500 3450 6500
 Wire Wire Line
 	3450 6500 3450 6400
@@ -267,35 +152,6 @@ Wire Wire Line
 Wire Wire Line
 	4400 5900 4500 5900
 $Comp
-L Interface_Expansion:MCP23008-xP U?
-U 1 1 5FEFB8C2
-P 3450 3150
-AR Path="/5FEFB8C2" Ref="U?"  Part="1" 
-AR Path="/604E5285/5FEFB8C2" Ref="U?"  Part="1" 
-AR Path="/6096B205/5FEFB8C2" Ref="U9"  Part="1" 
-F 0 "U9" V 3450 3150 50  0000 C CNN
-F 1 "MCP23008-xP" V 3600 3200 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 3450 2100 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf" H 4750 1950 50  0001 C CNN
-	1    3450 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 3450 2700 3450
-Wire Wire Line
-	2950 3350 2850 3350
-Wire Wire Line
-	2850 3350 2850 3150
-Wire Wire Line
-	2850 3150 2350 3150
-Wire Wire Line
-	2350 3150 2350 3550
-Wire Wire Line
-	2350 3550 2950 3550
-Connection ~ 2350 3550
-Wire Wire Line
-	2350 3550 2350 3700
-$Comp
 L power:+5V #PWR?
 U 1 1 5FF50771
 P 2700 6100
@@ -345,27 +201,8 @@ Text GLabel 2750 5500 0    50   Input ~ 0
 I2C_SCL
 Text GLabel 2750 5600 0    50   Input ~ 0
 I2C_SDA
-Text GLabel 2750 2850 0    50   Input ~ 0
-I2C_SCL
-Text GLabel 2750 2950 0    50   Input ~ 0
-I2C_SDA
 Text GLabel 2750 5400 0    50   Input ~ 0
 RESET
-Text GLabel 2750 2750 0    50   Input ~ 0
-RESET
-$Comp
-L power:+3V3 #PWR?
-U 1 1 600CDA04
-P 3450 1800
-AR Path="/604E5285/600CDA04" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/600CDA04" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3450 1650 50  0001 C CNN
-F 1 "+3V3" H 3465 1973 50  0000 C CNN
-F 2 "" H 3450 1800 50  0001 C CNN
-F 3 "" H 3450 1800 50  0001 C CNN
-	1    3450 1800
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 600D0A68
@@ -392,4 +229,29 @@ F 3 "" H 4900 4400 50  0001 C CNN
 	1    4900 4400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5700 5100 5700 6500
+Wire Wire Line
+	5700 6500 4900 6500
+Wire Wire Line
+	5300 5100 5700 5100
+Connection ~ 4900 6500
+Wire Wire Line
+	5300 5000 5700 5000
+Wire Wire Line
+	5300 4700 5700 4700
+Text Notes 5750 4850 0    50   ~ 0
+TODO!!!
+Wire Wire Line
+	4500 4700 4250 4700
+Wire Wire Line
+	4500 4800 4250 4800
+Wire Wire Line
+	4500 4900 4250 4900
+Text GLabel 4250 4700 0    50   Input ~ 0
+LCD_ENABLE
+Text GLabel 4250 4800 0    50   Input ~ 0
+LCD_RW
+Text GLabel 4250 4900 0    50   Input ~ 0
+LCD_REGSEL
 $EndSCHEMATC

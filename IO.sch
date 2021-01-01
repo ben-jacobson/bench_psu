@@ -14,127 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Interface_Expansion:MCP23008-xP U?
-U 1 1 605653F1
-P 9250 2250
-AR Path="/605653F1" Ref="U?"  Part="1" 
-AR Path="/604E5285/605653F1" Ref="U6"  Part="1" 
-F 0 "U6" V 9250 2250 50  0000 C CNN
-F 1 "MCP23008-xP" V 9400 2300 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 9250 1200 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf" H 10550 1050 50  0001 C CNN
-	1    9250 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 1850 8550 1850
-Wire Wire Line
-	8750 1950 8550 1950
-Wire Wire Line
-	8550 2050 8750 2050
-NoConn ~ 8750 2250
-Wire Wire Line
-	8750 2550 8750 2450
-Wire Wire Line
-	8550 2450 8750 2450
-Connection ~ 8750 2450
-Wire Wire Line
-	8550 2450 8550 2550
-Wire Wire Line
-	8750 2650 8750 2800
-Wire Wire Line
-	8750 2800 8300 2800
-Wire Wire Line
-	8300 2800 8300 2600
-$Comp
-L power:+5V #PWR?
-U 1 1 60565405
-P 8300 2600
-AR Path="/60565405" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/60565405" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 8300 2450 50  0001 C CNN
-F 1 "+5V" H 8315 2773 50  0000 C CNN
-F 2 "" H 8300 2600 50  0001 C CNN
-F 3 "" H 8300 2600 50  0001 C CNN
-	1    8300 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6056540B
-P 8550 2550
-AR Path="/6056540B" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/6056540B" Ref="#PWR0116"  Part="1" 
-F 0 "#PWR0116" H 8550 2300 50  0001 C CNN
-F 1 "GND" H 8555 2377 50  0000 C CNN
-F 2 "" H 8550 2550 50  0001 C CNN
-F 3 "" H 8550 2550 50  0001 C CNN
-	1    8550 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9250 2850 9250 3000
-$Comp
-L power:GND #PWR?
-U 1 1 60565412
-P 9250 3000
-AR Path="/60565412" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/60565412" Ref="#PWR0117"  Part="1" 
-F 0 "#PWR0117" H 9250 2750 50  0001 C CNN
-F 1 "GND" H 9255 2827 50  0000 C CNN
-F 2 "" H 9250 3000 50  0001 C CNN
-F 3 "" H 9250 3000 50  0001 C CNN
-	1    9250 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60565418
-P 8650 1250
-AR Path="/60565418" Ref="C?"  Part="1" 
-AR Path="/604E5285/60565418" Ref="C7"  Part="1" 
-F 0 "C7" V 8900 1200 50  0000 L CNN
-F 1 "0.1uF" V 8800 1150 50  0000 L CNN
-F 2 "" H 8688 1100 50  0001 C CNN
-F 3 "~" H 8650 1250 50  0001 C CNN
-	1    8650 1250
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6056541E
-P 8650 1500
-AR Path="/6056541E" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/6056541E" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 8650 1250 50  0001 C CNN
-F 1 "GND" H 8655 1327 50  0000 C CNN
-F 2 "" H 8650 1500 50  0001 C CNN
-F 3 "" H 8650 1500 50  0001 C CNN
-	1    8650 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 1400 8650 1500
-Wire Wire Line
-	8650 1100 9250 1100
-Wire Wire Line
-	9250 1100 9250 1650
-Wire Wire Line
-	9250 1100 9250 900 
-Connection ~ 9250 1100
-Wire Wire Line
-	9750 1850 10050 1850
-Wire Wire Line
-	9750 1950 10050 1950
-Wire Wire Line
-	9750 2050 10050 2050
-Wire Wire Line
-	9750 2150 10050 2150
-Wire Wire Line
-	9750 2250 10050 2250
-Wire Wire Line
-	9750 2350 10050 2350
-$Comp
 L Device:R R?
 U 1 1 605B5A07
 P 2850 1850
@@ -619,8 +498,8 @@ $Comp
 L Device:CP C10
 U 1 1 6076B16D
 P 1650 5950
-F 0 "C10" H 1450 6000 50  0000 L CNN
-F 1 "1uF" H 1400 5900 50  0000 L CNN
+F 0 "C10" H 1350 6000 50  0000 L CNN
+F 1 "1uF" H 1350 5900 50  0000 L CNN
 F 2 "" H 1688 5800 50  0001 C CNN
 F 3 "~" H 1650 5950 50  0001 C CNN
 	1    1650 5950
@@ -797,26 +676,6 @@ Wire Wire Line
 	6550 4300 6550 4150
 Wire Wire Line
 	6550 4150 6700 4150
-Text GLabel 10050 1850 2    50   Input ~ 0
-CH1_ROT_STEP
-Text GLabel 10050 2150 2    50   Input ~ 0
-CH2_ROT_STEP
-Text GLabel 10050 1950 2    50   Input ~ 0
-CH1_ROT_DIR
-Text GLabel 10050 2250 2    50   Input ~ 0
-CH2_ROT_DIR
-Text GLabel 10050 2050 2    50   Input ~ 0
-CH1_FineCourse
-Text GLabel 10050 2350 2    50   Input ~ 0
-CH2_FineCourse
-NoConn ~ 9750 2450
-NoConn ~ 9750 2550
-Text GLabel 8550 1950 0    50   Input ~ 0
-I2C_SCL
-Text GLabel 8550 2050 0    50   Input ~ 0
-I2C_SDA
-Text GLabel 8550 1850 0    50   Input ~ 0
-RESET
 $Comp
 L power:+3V3 #PWR?
 U 1 1 600ABCA0
@@ -881,17 +740,6 @@ F 1 "+3V3" H 5465 1523 50  0000 C CNN
 F 2 "" H 5450 1350 50  0001 C CNN
 F 3 "" H 5450 1350 50  0001 C CNN
 	1    5450 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 600CB0A8
-P 9250 900
-F 0 "#PWR?" H 9250 750 50  0001 C CNN
-F 1 "+3V3" H 9265 1073 50  0000 C CNN
-F 2 "" H 9250 900 50  0001 C CNN
-F 3 "" H 9250 900 50  0001 C CNN
-	1    9250 900 
 	1    0    0    -1  
 $EndComp
 $Comp
