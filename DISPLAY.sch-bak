@@ -17,8 +17,8 @@ $Comp
 L Display_Character:WC1602A DS1
 U 1 1 6096E5BE
 P 6500 3100
-F 0 "DS1" H 6900 4100 50  0000 C CNN
-F 1 "16x02 LCD display WC1602A" H 7350 4000 50  0000 C CNN
+F 0 "DS1" V 7000 2650 50  0000 C CNN
+F 1 "16x02 LCD display WC1602A" V 7100 2650 50  0000 C CNN
 F 2 "Display:WC1602A" H 6500 2200 50  0001 C CIN
 F 3 "http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf" H 7200 3100 50  0001 C CNN
 	1    6500 3100
@@ -37,8 +37,6 @@ F 3 "" H 5750 4500 50  0001 C CNN
 	1    5750 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 2200 6500 2300
 $Comp
 L Interface_Expansion:MCP23008-xP U?
 U 1 1 5FEF98BC
@@ -46,8 +44,8 @@ P 5050 3600
 AR Path="/5FEF98BC" Ref="U?"  Part="1" 
 AR Path="/604E5285/5FEF98BC" Ref="U?"  Part="1" 
 AR Path="/6096B205/5FEF98BC" Ref="U10"  Part="1" 
-F 0 "U10" V 5050 3600 50  0000 C CNN
-F 1 "MCP23008-xP" V 5200 3650 50  0000 C CNN
+F 0 "U10" V 5000 3600 50  0000 C CNN
+F 1 "MCP23008-xP" V 5100 3600 50  0000 C CNN
 F 2 "Package_DIP:DIP-18_W7.62mm" H 5050 2550 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf" H 6350 2400 50  0001 C CNN
 	1    5050 3600
@@ -69,7 +67,7 @@ AR Path="/604E5285/5FEF98E3" Ref="C?"  Part="1"
 AR Path="/6096B205/5FEF98E3" Ref="C17"  Part="1" 
 F 0 "C17" V 4700 2550 50  0000 L CNN
 F 1 "0.1uF" V 4600 2500 50  0000 L CNN
-F 2 "" H 4488 2450 50  0001 C CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4488 2450 50  0001 C CNN
 F 3 "~" H 4450 2600 50  0001 C CNN
 	1    4450 2600
 	-1   0    0    1   
@@ -148,20 +146,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 3700 6100 3700
 $Comp
-L power:+5V #PWR?
-U 1 1 5FF50771
-P 4300 3900
-AR Path="/5FF50771" Ref="#PWR?"  Part="1" 
-AR Path="/604E5285/5FF50771" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/5FF50771" Ref="#PWR014"  Part="1" 
-F 0 "#PWR014" H 4300 3750 50  0001 C CNN
-F 1 "+5V" H 4315 4073 50  0000 C CNN
-F 2 "" H 4300 3900 50  0001 C CNN
-F 3 "" H 4300 3900 50  0001 C CNN
-	1    4300 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5FF50899
 P 3950 4150
@@ -189,7 +173,6 @@ Wire Wire Line
 	4550 4000 4300 4000
 Wire Wire Line
 	4300 4000 4300 3900
-Connection ~ 4300 3900
 Text GLabel 4350 3300 0    50   Input ~ 0
 I2C_SCL
 Text GLabel 4350 3400 0    50   Input ~ 0
@@ -223,17 +206,6 @@ F 3 "" H 6500 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 2900 7300 4300
-Wire Wire Line
-	7300 4300 6500 4300
-Wire Wire Line
-	6900 2900 7300 2900
-Connection ~ 6500 4300
-Wire Wire Line
-	6900 2800 7300 2800
-Text Notes 7350 2650 0    50   ~ 0
-TODO!!!
-Wire Wire Line
 	6100 2500 5850 2500
 Wire Wire Line
 	6100 2600 5850 2600
@@ -246,12 +218,70 @@ LCD_RW
 Text GLabel 5850 2700 0    50   Input ~ 0
 LCD_REGSEL
 Wire Wire Line
-	6900 2500 7300 2500
-Wire Wire Line
 	5050 4300 5750 4300
 Wire Wire Line
 	5750 4500 5750 4300
 Connection ~ 5750 4300
 Wire Wire Line
 	5750 4300 6500 4300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FF66CA5
+P 4300 3850
+AR Path="/604E5285/5FF66CA5" Ref="#PWR?"  Part="1" 
+AR Path="/6096B205/5FF66CA5" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 4300 3700 50  0001 C CNN
+F 1 "+3V3" H 4315 4023 50  0000 C CNN
+F 2 "" H 4300 3850 50  0001 C CNN
+F 3 "" H 4300 3850 50  0001 C CNN
+	1    4300 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3850 4300 3900
+Connection ~ 4300 3900
+$Comp
+L Device:R_POT RV1
+U 1 1 5FF69F75
+P 7450 2500
+F 0 "RV1" H 7380 2454 50  0000 R CNN
+F 1 "10K LIN" H 7380 2545 50  0000 R CNN
+F 2 "" H 7450 2500 50  0001 C CNN
+F 3 "~" H 7450 2500 50  0001 C CNN
+	1    7450 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FF6DEDA
+P 7100 2750
+AR Path="/604E5285/5FF6DEDA" Ref="#PWR?"  Part="1" 
+AR Path="/6096B205/5FF6DEDA" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H 7100 2600 50  0001 C CNN
+F 1 "+3V3" H 7115 2923 50  0000 C CNN
+F 2 "" H 7100 2750 50  0001 C CNN
+F 3 "" H 7100 2750 50  0001 C CNN
+	1    7100 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 2350 7450 2250
+Wire Wire Line
+	6900 2800 7100 2800
+Wire Wire Line
+	7100 2800 7100 2750
+Wire Wire Line
+	6500 2200 6500 2250
+Wire Wire Line
+	7450 2650 7450 4300
+Wire Wire Line
+	6900 2500 7300 2500
+Wire Wire Line
+	7450 2250 6500 2250
+Connection ~ 6500 2250
+Wire Wire Line
+	6500 2250 6500 2300
+Wire Wire Line
+	7400 4300 6500 4300
+Connection ~ 6500 4300
 $EndSCHEMATC

@@ -149,7 +149,7 @@ AR Path="/605245D7" Ref="U?"  Part="1"
 AR Path="/604D3BA3/605245D7" Ref="U3"  Part="1" 
 F 0 "U3" H 7800 2067 50  0000 C CNN
 F 1 "LM2674N-ADJ" H 7800 1976 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 7850 1250 50  0001 L CIN
+F 2 "" H 7850 1250 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2674.pdf" H 7800 1600 50  0001 C CNN
 	1    7800 1600
 	1    0    0    -1  
@@ -183,7 +183,7 @@ AR Path="/60524600" Ref="U?"  Part="1"
 AR Path="/604D3BA3/60524600" Ref="U1"  Part="1" 
 F 0 "U1" H 2850 2067 50  0000 C CNN
 F 1 "LM2674N-ADJ" H 2850 1976 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 2900 1250 50  0001 L CIN
+F 2 "" H 2900 1250 50  0001 L CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2674.pdf" H 2850 1600 50  0001 C CNN
 	1    2850 1600
 	1    0    0    -1  
@@ -831,7 +831,7 @@ U 1 1 600E5721
 P 3500 6200
 F 0 "U2" H 3500 6567 50  0000 C CNN
 F 1 "LM2574N-3.3" H 3500 6476 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3100 6550 50  0001 L CIN
+F 2 "" H 3100 6550 50  0001 L CIN
 F 3 "http://www.national.com/ds/LM/LM2574.pdf" H 3500 6200 50  0001 C CNN
 	1    3500 6200
 	1    0    0    -1  
