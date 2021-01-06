@@ -1,6 +1,6 @@
-Schematics and AVR code for basic adjustable DC bench power supply.
+Schematics and ARM Mbed code for a basic adjustable DC bench power supply.
 
-This uses an ATTiny MCU to control two channels of adjustable switch mode power supply. Two rotary encoders allow adjustment for voltage on each channel, along with a push button to switch between coarse and fine voltage adjustments. This design makes use of a 10 bit ADC to measure the voltage so that adjustment is made on an actual measured voltage not some theoretical calculation. With a 10 bit measurement, this allows 1024 discrete steps of adjustment, meaning the smallest fine adjustment of voltage is 23mV.
+This uses an STM32 MCU to control two channels of adjustable switch mode power supply. Two rotary encoders allow adjustment for voltage on each channel, along with a push button to switch between coarse and fine voltage adjustments. This design makes use of a 12 bit ADC to measure the voltage so that adjustment is made on an actual measured voltage not some theoretical calculation. 
 
 Both power supplies ranges from 1.21V to 24V, each channel is capable of delivering 500mA current. For now there is no current control. The switch mode supplies are LM2674s
 

@@ -46,7 +46,7 @@ AR Path="/604E5285/5FEF98BC" Ref="U?"  Part="1"
 AR Path="/6096B205/5FEF98BC" Ref="U10"  Part="1" 
 F 0 "U10" V 5000 3600 50  0000 C CNN
 F 1 "MCP23008-xP" V 5100 3600 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 5050 2550 50  0001 C CNN
+F 2 "" H 5050 2550 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MCP23008-MCP23S08-Data-Sheet-20001919F.pdf" H 6350 2400 50  0001 C CNN
 	1    5050 3600
 	1    0    0    -1  
@@ -67,7 +67,7 @@ AR Path="/604E5285/5FEF98E3" Ref="C?"  Part="1"
 AR Path="/6096B205/5FEF98E3" Ref="C17"  Part="1" 
 F 0 "C17" V 4700 2550 50  0000 L CNN
 F 1 "0.1uF" V 4600 2500 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 4488 2450 50  0001 C CNN
+F 2 "" H 4488 2450 50  0001 C CNN
 F 3 "~" H 4450 2600 50  0001 C CNN
 	1    4450 2600
 	-1   0    0    1   

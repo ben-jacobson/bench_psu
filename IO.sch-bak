@@ -21,7 +21,7 @@ AR Path="/605B5A07" Ref="R?"  Part="1"
 AR Path="/604E5285/605B5A07" Ref="R6"  Part="1" 
 F 0 "R6" H 2780 1804 50  0000 R CNN
 F 1 "10K" H 2780 1895 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 2780 1850 50  0001 C CNN
+F 2 "" V 2780 1850 50  0001 C CNN
 F 3 "~" H 2850 1850 50  0001 C CNN
 	1    2850 1850
 	-1   0    0    1   
@@ -34,7 +34,7 @@ AR Path="/605B5ABD" Ref="U?"  Part="1"
 AR Path="/604E5285/605B5ABD" Ref="U7"  Part="1" 
 F 0 "U7" H 8000 4800 50  0000 C CNN
 F 1 "4013" H 8300 4800 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 8150 4400 50  0001 C CNN
+F 2 "" H 8150 4400 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 8150 4400 50  0001 C CNN
 	1    8150 4400
 	1    0    0    -1  
@@ -47,7 +47,7 @@ AR Path="/605B5AC3" Ref="U?"  Part="2"
 AR Path="/604E5285/605B5AC3" Ref="U7"  Part="2" 
 F 0 "U7" H 8000 5750 50  0000 C CNN
 F 1 "4013" H 8300 5750 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 8150 5400 50  0001 C CNN
+F 2 "" H 8150 5400 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 8150 5400 50  0001 C CNN
 	2    8150 5400
 	1    0    0    -1  
@@ -75,7 +75,7 @@ AR Path="/605B5ADF" Ref="C?"  Part="1"
 AR Path="/604E5285/605B5ADF" Ref="C8"  Part="1" 
 F 0 "C8" V 6950 1900 50  0000 L CNN
 F 1 "0.1uF" V 6850 1850 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 6738 1800 50  0001 C CNN
+F 2 "" H 6738 1800 50  0001 C CNN
 F 3 "~" H 6700 1950 50  0001 C CNN
 	1    6700 1950
 	-1   0    0    1   
@@ -88,7 +88,7 @@ AR Path="/605B5AED" Ref="U?"  Part="1"
 AR Path="/604E5285/605B5AED" Ref="U5"  Part="1" 
 F 0 "U5" H 6250 4617 50  0000 C CNN
 F 1 "74HC14" H 6250 4526 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 6250 4300 50  0001 C CNN
+F 2 "" H 6250 4300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6250 4300 50  0001 C CNN
 	1    6250 4300
 	1    0    0    -1  
@@ -101,7 +101,7 @@ AR Path="/605B5AF3" Ref="U?"  Part="2"
 AR Path="/604E5285/605B5AF3" Ref="U5"  Part="2" 
 F 0 "U5" H 6250 4117 50  0000 C CNN
 F 1 "74HC14" H 6250 4026 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 6250 3800 50  0001 C CNN
+F 2 "" H 6250 3800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6250 3800 50  0001 C CNN
 	2    6250 3800
 	1    0    0    -1  
@@ -114,7 +114,7 @@ AR Path="/605B5AF9" Ref="U?"  Part="3"
 AR Path="/604E5285/605B5AF9" Ref="U5"  Part="3" 
 F 0 "U5" H 6250 5617 50  0000 C CNN
 F 1 "74HC14" H 6250 5526 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 6250 5300 50  0001 C CNN
+F 2 "" H 6250 5300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6250 5300 50  0001 C CNN
 	3    6250 5300
 	1    0    0    -1  
@@ -127,7 +127,7 @@ AR Path="/605B5AFF" Ref="U?"  Part="4"
 AR Path="/604E5285/605B5AFF" Ref="U5"  Part="4" 
 F 0 "U5" H 6250 5117 50  0000 C CNN
 F 1 "74HC14" H 6250 5026 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 6250 4800 50  0001 C CNN
+F 2 "" H 6250 4800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 6250 4800 50  0001 C CNN
 	4    6250 4800
 	1    0    0    -1  
@@ -140,7 +140,7 @@ AR Path="/605B5B05" Ref="U?"  Part="7"
 AR Path="/604E5285/605B5B05" Ref="U5"  Part="7" 
 F 0 "U5" H 5680 2046 50  0000 L CNN
 F 1 "74HC14" H 5680 1955 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5450 2000 50  0001 C CNN
+F 2 "" H 5450 2000 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 5450 2000 50  0001 C CNN
 	7    5450 2000
 	1    0    0    -1  
@@ -153,7 +153,7 @@ AR Path="/6065EA7A" Ref="R?"  Part="1"
 AR Path="/604E5285/6065EA7A" Ref="R4"  Part="1" 
 F 0 "R4" H 2850 1800 50  0000 R CNN
 F 1 "10K" H 2900 1900 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 2580 1850 50  0001 C CNN
+F 2 "" V 2580 1850 50  0001 C CNN
 F 3 "~" H 2650 1850 50  0001 C CNN
 	1    2650 1850
 	-1   0    0    1   
@@ -168,7 +168,7 @@ AR Path="/605B59F9" Ref="C?"  Part="1"
 AR Path="/604E5285/605B59F9" Ref="C13"  Part="1" 
 F 0 "C13" H 3100 3350 50  0000 C CNN
 F 1 "0.1uF" H 3100 3450 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3388 3300 50  0001 C CNN
+F 2 "" H 3388 3300 50  0001 C CNN
 F 3 "~" H 3350 3450 50  0001 C CNN
 	1    3350 3450
 	-1   0    0    1   
@@ -181,7 +181,7 @@ AR Path="/605B59F2" Ref="R?"  Part="1"
 AR Path="/604E5285/605B59F2" Ref="R10"  Part="1" 
 F 0 "R10" V 3200 3050 50  0000 C CNN
 F 1 "1K" V 3000 3050 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 3030 3050 50  0001 C CNN
+F 2 "" V 3030 3050 50  0001 C CNN
 F 3 "~" H 3100 3050 50  0001 C CNN
 	1    3100 3050
 	0    -1   -1   0   
@@ -209,7 +209,7 @@ AR Path="/605B59DE" Ref="R?"  Part="1"
 AR Path="/604E5285/605B59DE" Ref="R8"  Part="1" 
 F 0 "R8" H 3150 1800 50  0000 L CNN
 F 1 "10K" H 3100 1900 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 3280 1850 50  0001 C CNN
+F 2 "" V 3280 1850 50  0001 C CNN
 F 3 "~" H 3350 1850 50  0001 C CNN
 	1    3350 1850
 	-1   0    0    1   
@@ -319,7 +319,7 @@ AR Path="/606CD008" Ref="R?"  Part="1"
 AR Path="/604E5285/606CD008" Ref="R7"  Part="1" 
 F 0 "R7" H 2780 5204 50  0000 R CNN
 F 1 "10K" H 2780 5295 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 2780 5250 50  0001 C CNN
+F 2 "" V 2780 5250 50  0001 C CNN
 F 3 "~" H 2850 5250 50  0001 C CNN
 	1    2850 5250
 	-1   0    0    1   
@@ -334,7 +334,7 @@ AR Path="/606CD013" Ref="R?"  Part="1"
 AR Path="/604E5285/606CD013" Ref="R5"  Part="1" 
 F 0 "R5" H 2850 5200 50  0000 R CNN
 F 1 "10K" H 2900 5300 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 2580 5250 50  0001 C CNN
+F 2 "" V 2580 5250 50  0001 C CNN
 F 3 "~" H 2650 5250 50  0001 C CNN
 	1    2650 5250
 	-1   0    0    1   
@@ -349,7 +349,7 @@ AR Path="/606CD01E" Ref="C?"  Part="1"
 AR Path="/604E5285/606CD01E" Ref="C16"  Part="1" 
 F 0 "C16" H 3100 6750 50  0000 C CNN
 F 1 "0.1uF" H 3100 6850 50  0000 C CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 3388 6700 50  0001 C CNN
+F 2 "" H 3388 6700 50  0001 C CNN
 F 3 "~" H 3350 6850 50  0001 C CNN
 	1    3350 6850
 	-1   0    0    1   
@@ -362,7 +362,7 @@ AR Path="/606CD028" Ref="R?"  Part="1"
 AR Path="/604E5285/606CD028" Ref="R9"  Part="1" 
 F 0 "R9" V 3200 6450 50  0000 C CNN
 F 1 "1K" V 3000 6450 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 3030 6450 50  0001 C CNN
+F 2 "" V 3030 6450 50  0001 C CNN
 F 3 "~" H 3100 6450 50  0001 C CNN
 	1    3100 6450
 	0    -1   -1   0   
@@ -390,7 +390,7 @@ AR Path="/606CD03D" Ref="R?"  Part="1"
 AR Path="/604E5285/606CD03D" Ref="R11"  Part="1" 
 F 0 "R11" H 3150 5200 50  0000 L CNN
 F 1 "10K" H 3100 5300 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P20.32mm_Horizontal" V 3280 5250 50  0001 C CNN
+F 2 "" V 3280 5250 50  0001 C CNN
 F 3 "~" H 3350 5250 50  0001 C CNN
 	1    3350 5250
 	-1   0    0    1   
@@ -500,7 +500,7 @@ U 1 1 6076B16D
 P 1650 5950
 F 0 "C10" H 1350 6000 50  0000 L CNN
 F 1 "1uF" H 1350 5900 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 1688 5800 50  0001 C CNN
+F 2 "" H 1688 5800 50  0001 C CNN
 F 3 "~" H 1650 5950 50  0001 C CNN
 	1    1650 5950
 	1    0    0    -1  
@@ -511,7 +511,7 @@ U 1 1 6076B81D
 P 1900 5950
 F 0 "C12" H 2018 5996 50  0000 L CNN
 F 1 "1uF" H 2018 5905 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 1938 5800 50  0001 C CNN
+F 2 "" H 1938 5800 50  0001 C CNN
 F 3 "~" H 1900 5950 50  0001 C CNN
 	1    1900 5950
 	1    0    0    -1  
@@ -522,7 +522,7 @@ U 1 1 6076D4C0
 P 1650 2550
 F 0 "C9" H 1450 2600 50  0000 L CNN
 F 1 "1uF" H 1400 2500 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 1688 2400 50  0001 C CNN
+F 2 "" H 1688 2400 50  0001 C CNN
 F 3 "~" H 1650 2550 50  0001 C CNN
 	1    1650 2550
 	1    0    0    -1  
@@ -533,7 +533,7 @@ U 1 1 6076E9DA
 P 1900 2550
 F 0 "C11" H 2050 2600 50  0000 L CNN
 F 1 "1uF" H 2050 2500 50  0000 L CNN
-F 2 "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P7.50mm_Horizontal" H 1938 2400 50  0001 C CNN
+F 2 "" H 1938 2400 50  0001 C CNN
 F 3 "~" H 1900 2550 50  0001 C CNN
 	1    1900 2550
 	1    0    0    -1  
@@ -560,7 +560,7 @@ AR Path="/6078FAD8" Ref="C?"  Part="1"
 AR Path="/604E5285/6078FAD8" Ref="C14"  Part="1" 
 F 0 "C14" V 5250 2000 50  0000 L CNN
 F 1 "0.1uF" V 5150 1950 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 5038 1900 50  0001 C CNN
+F 2 "" H 5038 1900 50  0001 C CNN
 F 3 "~" H 5000 2050 50  0001 C CNN
 	1    5000 2050
 	-1   0    0    1   
@@ -701,7 +701,7 @@ AR Path="/605B5AC9" Ref="U?"  Part="3"
 AR Path="/604E5285/605B5AC9" Ref="U7"  Part="3" 
 F 0 "U7" H 7330 2046 50  0000 L CNN
 F 1 "4013" H 7330 1955 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7100 2000 50  0001 C CNN
+F 2 "" H 7100 2000 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 7100 2000 50  0001 C CNN
 	3    7100 2000
 	1    0    0    -1  
