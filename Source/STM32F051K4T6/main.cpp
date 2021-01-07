@@ -1,5 +1,11 @@
+/*
+    Requires Mbed-OS 6.5 or later
+    See mbed_app.json file, the printf library has been reverted to standard to allow full functionality - in this case, we needed printf to print floats with a set decimal place
+*/
+
 #include "mbed.h"
 #include "HD4470_HAL.h"
+#include "voltmeter_thread.h"
 
 int main() {
 /*
@@ -23,13 +29,18 @@ DigitalOut unused_A7(A7);
 DigitalOut unused_D3(D3);
 DigitalOut unused_D6(D6);
 
+constexpr int VOUTSCALE = 10; 
+constexpr float AREF = 3.324f;
+voltmeter_thread ch_one_voltmeter(A0, AREF, VOUTSCALE);
+voltmeter_thread ch_two_voltmeter(A1, AREF, VOUTSCALE);
+
 // Set up our ADC to read the voltage input
-AnalogIn voltage_read_pot(A0, 3.328f); // 3v3 reference voltage
+//AnalogIn voltage_read_pot(A1, 3.324f * VOUTSCALE); // 3v3 reference voltage, but at 10x scale. // todo - make this adjustable.
 
     while (true) {
         LCD_Display.set_cursor_position(0, 0);
-        LCD_Display.printf("CH1: %.2fV\n", voltage_read_pot.read_voltage() * 10);   // Note, you must enable std printf to allow printing floats - https://github.com/ARMmbed/mbed-os/blob/master/platform/source/minimal-printf/README.md
-        LCD_Display.printf("CH2: x.xxV");
+        LCD_Display.printf("CH1: %.2fV\n", ch_one_voltmeter.voltage);   // Note, you must enable std printf to allow printing floats - https://github.com/ARMmbed/mbed-os/blob/master/platform/source/minimal-printf/README.md
+        LCD_Display.printf("CH2: %.2fV\n", ch_two_voltmeter.voltage);
         ThisThread::sleep_for(100ms);
     }
 }

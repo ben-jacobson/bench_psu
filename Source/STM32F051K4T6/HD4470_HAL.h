@@ -1,5 +1,5 @@
-#ifndef HD4470_HAL
-#define HD4470_HAL
+#ifndef HD4470
+#define HD4470
 
 #include "mbed.h"
 #include "platform/Stream.h"
@@ -9,7 +9,7 @@ union data_bus_or_port {      // we give the user the choice of using a PortOut,
     BusOut *data_bus;
 };
 
-class HDD4470_HAL  : public Stream {
+class HDD4470_HAL : public Stream {
 /* 
 *  Specifically designed for use with the Adafruit LCD 16x2 screen which uses the HD44780 driver chip. 
 *  Certain delay times are needed for error free operation, and there are a lot of basic functions to help get the device up and running

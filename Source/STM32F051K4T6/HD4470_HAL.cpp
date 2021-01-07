@@ -1,6 +1,5 @@
 #include "HD4470_HAL.h"
 
-
 // constructor for using with a Port
 HDD4470_HAL::HDD4470_HAL(PortOut* _data_pins_port, PinName _register_select_pin, PinName _read_write_pin, PinName _enable_pin, bool initialize_with_default)
 :   register_select_pin(_register_select_pin), 
