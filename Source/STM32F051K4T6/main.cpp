@@ -39,8 +39,8 @@ voltmeter_thread ch_two_voltmeter(A1, AREF, VOUTSCALE);
 
     while (true) {
         LCD_Display.set_cursor_position(0, 0);
-        LCD_Display.printf("CH1: %.2fV\n", ch_one_voltmeter.voltage);   // Note, you must enable std printf to allow printing floats - https://github.com/ARMmbed/mbed-os/blob/master/platform/source/minimal-printf/README.md
-        LCD_Display.printf("CH2: %.2fV\n", ch_two_voltmeter.voltage);
+        LCD_Display.printf("CH1: %.2fV\n", ch_one_voltmeter.get_voltage());   // Note, you must enable std printf to allow printing floats - https://github.com/ARMmbed/mbed-os/blob/master/platform/source/minimal-printf/README.md
+        LCD_Display.printf("CH2: %.2fV\n", ch_two_voltmeter.get_voltage());
         ThisThread::sleep_for(100ms);
     }
 }
