@@ -19,7 +19,7 @@ BusOut LCD_display_data_bus(D5, D6, D7, D8, D9, D10, D11, D12); // Otherwise, do
 HDD4470_HAL LCD_Display(&LCD_display_data_bus, D2, D3, D4);
 
 // Set up our unused ADC pins as digitalOuts. This helps to reduce ADC error
-DigitalOut unused_A1(A1);
+//DigitalOut unused_A1(A1);
 DigitalOut unused_A2(A2);
 DigitalOut unused_A3(A3);
 DigitalOut unused_A4(A4);
@@ -39,8 +39,8 @@ voltmeter_thread ch_two_voltmeter(A1, AREF, VOUTSCALE);
 
     while (true) {
         LCD_Display.set_cursor_position(0, 0);
-        LCD_Display.printf("CH1: %.2fV\n", ch_one_voltmeter.get_voltage());   // Note, you must enable std printf to allow printing floats - https://github.com/ARMmbed/mbed-os/blob/master/platform/source/minimal-printf/README.md
-        LCD_Display.printf("CH2: %.2fV\n", ch_two_voltmeter.get_voltage());
+        LCD_Display.printf("CH1: %.1fV \n", ch_one_voltmeter.get_average_voltage());   // Note, you must enable std printf to allow printing floats - https://github.com/ARMmbed/mbed-os/blob/master/platform/source/minimal-printf/README.md
+        LCD_Display.printf("CH2: %.1fV \n", ch_two_voltmeter.get_average_voltage());
         ThisThread::sleep_for(100ms);
     }
 }
