@@ -429,20 +429,6 @@ F 3 "~" H 9250 2150 50  0001 C CNN
 	1    9250 2150
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 600C20D0
-P 8900 2400
-AR Path="/604E5285/600C20D0" Ref="#PWR?"  Part="1" 
-AR Path="/6096B205/600C20D0" Ref="#PWR?"  Part="1" 
-AR Path="/604D4533/600C20D0" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 8900 2250 50  0001 C CNN
-F 1 "+3V3" H 8915 2573 50  0000 C CNN
-F 2 "" H 8900 2400 50  0001 C CNN
-F 3 "" H 8900 2400 50  0001 C CNN
-	1    8900 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9250 2000 9250 1900
 Wire Wire Line
@@ -504,6 +490,17 @@ F 1 "+5V" H 8315 2023 50  0000 C CNN
 F 2 "" H 8300 1850 50  0001 C CNN
 F 3 "" H 8300 1850 50  0001 C CNN
 	1    8300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60296553
+P 8900 2400
+F 0 "#PWR?" H 8900 2250 50  0001 C CNN
+F 1 "+5V" H 8915 2573 50  0000 C CNN
+F 2 "" H 8900 2400 50  0001 C CNN
+F 3 "" H 8900 2400 50  0001 C CNN
+	1    8900 2400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
