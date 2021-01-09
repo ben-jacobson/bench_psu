@@ -135,7 +135,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 5450 3200 5650
 Text Notes 6000 4500 0    50   ~ 0
-Vout 1.25V to 36V\n
+Vout 1V to 22V\n
 Text Notes 6000 4600 0    50   ~ 0
 500mA\n
 $Comp
@@ -188,7 +188,7 @@ $EndComp
 Text Notes 6000 1750 0    50   ~ 0
 500mA\n
 Text Notes 6000 1650 0    50   ~ 0
-Vout 1.25V to 36V\n
+Vout 1V to 22V\n
 Wire Wire Line
 	3200 2600 3200 2800
 Wire Wire Line
@@ -1121,4 +1121,6 @@ Wire Wire Line
 Connection ~ 7700 2950
 Text Notes 9300 2850 0    50   ~ 0
 5V PSU
+Text Notes 6950 2950 0    50   ~ 0
+8-40Vin
 $EndSCHEMATC
