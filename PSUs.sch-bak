@@ -1121,4 +1121,6 @@ Wire Wire Line
 Connection ~ 7700 2950
 Text Notes 9300 2850 0    50   ~ 0
 5V PSU
+Text Notes 6950 2950 0    50   ~ 0
+8-40Vin
 $EndSCHEMATC
