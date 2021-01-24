@@ -578,27 +578,8 @@ F 3 "~" H 5150 2800 50  0001 C CNN
 	1    5150 2800
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:CP COUT?
-U 1 1 5FFA3978
-P 4800 3100
-AR Path="/5FFA3978" Ref="COUT?"  Part="1" 
-AR Path="/604D3BA3/5FFA3978" Ref="C2"  Part="1" 
-F 0 "C2" H 4918 3146 50  0000 L CNN
-F 1 "10uF 25V" H 4918 3055 50  0000 L CNN
-F 2 "" H 4838 2950 50  0001 C CNN
-F 3 "~" H 4800 3100 50  0001 C CNN
-	1    4800 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 2800 4800 2950
 Wire Wire Line
 	3900 2800 4400 2800
-Wire Wire Line
-	4800 3250 4800 3400
-Wire Wire Line
-	4800 3400 3900 3400
 Connection ~ 3900 3400
 $Comp
 L Device:CP C?
@@ -614,17 +595,11 @@ F 3 "~" H 5450 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 2800 5000 2800
-Connection ~ 4800 2800
-Wire Wire Line
 	5300 2800 5450 2800
 Wire Wire Line
 	5450 2800 5450 2950
 Wire Wire Line
 	5450 3250 5450 3400
-Wire Wire Line
-	5450 3400 4800 3400
-Connection ~ 4800 3400
 Connection ~ 5450 2800
 $Comp
 L Transistor_BJT:2N2219 Q1
@@ -647,8 +622,6 @@ Wire Wire Line
 	4400 2450 5600 2450
 Connection ~ 4400 2800
 Wire Wire Line
-	4400 2800 4800 2800
-Wire Wire Line
 	6450 2450 6450 2150
 $Comp
 L Device:R R9
@@ -663,25 +636,6 @@ F 3 "~" H 5150 5650 50  0001 C CNN
 $EndComp
 $Comp
 L Device:CP C?
-U 1 1 60043E61
-P 4800 5950
-AR Path="/60043E61" Ref="C?"  Part="1" 
-AR Path="/604D3BA3/60043E61" Ref="C4"  Part="1" 
-F 0 "C4" H 4918 5996 50  0000 L CNN
-F 1 "10uF 25V" H 4918 5905 50  0000 L CNN
-F 2 "" H 4838 5800 50  0001 C CNN
-F 3 "~" H 4800 5950 50  0001 C CNN
-	1    4800 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 5650 4800 5800
-Wire Wire Line
-	4800 6100 4800 6250
-Wire Wire Line
-	4800 6250 3900 6250
-$Comp
-L Device:CP C?
 U 1 1 60043E6E
 P 5450 5950
 AR Path="/60043E6E" Ref="C?"  Part="1" 
@@ -694,17 +648,11 @@ F 3 "~" H 5450 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 5650 5000 5650
-Connection ~ 4800 5650
-Wire Wire Line
 	5300 5650 5450 5650
 Wire Wire Line
 	5450 5650 5450 5800
 Wire Wire Line
 	5450 6100 5450 6250
-Wire Wire Line
-	5450 6250 4800 6250
-Connection ~ 4800 6250
 Connection ~ 5450 5650
 $Comp
 L Transistor_BJT:2N2219 Q2
@@ -723,8 +671,6 @@ Wire Wire Line
 	5800 5650 5450 5650
 Wire Wire Line
 	4400 5300 5600 5300
-Wire Wire Line
-	4400 5650 4800 5650
 Wire Wire Line
 	6450 5300 6450 5000
 Connection ~ 3900 6250
@@ -792,13 +738,6 @@ F 3 "~" H 3350 1700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 1700 3200 1700
-Wire Wire Line
-	3500 1700 3950 1700
-Wire Wire Line
-	3950 1700 3950 2600
-Wire Wire Line
-	3950 2600 3200 2600
-Connection ~ 3200 2600
 $Comp
 L Device:R R7
 U 1 1 60043D10
@@ -848,13 +787,6 @@ $EndComp
 Wire Wire Line
 	3000 4550 3250 4550
 Wire Wire Line
-	3550 4550 4000 4550
-Wire Wire Line
-	4000 4550 4000 5450
-Wire Wire Line
-	3200 5450 4000 5450
-Connection ~ 3200 5450
-Wire Wire Line
 	2800 5250 3000 5250
 $Comp
 L Device:R R2
@@ -873,10 +805,7 @@ Wire Wire Line
 	2950 1200 3200 1200
 Connection ~ 2950 1700
 Wire Wire Line
-	3500 1200 3950 1200
-Wire Wire Line
-	3950 1200 3950 1700
-Connection ~ 3950 1700
+	3500 1200 3900 1200
 $Comp
 L Device:R R5
 U 1 1 6007C63E
@@ -892,12 +821,7 @@ Wire Wire Line
 	3000 4550 3000 4050
 Wire Wire Line
 	3000 4050 3250 4050
-Wire Wire Line
-	3550 4050 4000 4050
-Wire Wire Line
-	4000 4050 4000 4550
 Connection ~ 3000 4550
-Connection ~ 4000 4550
 Text Notes 2500 1000 0    50   ~ 0
 Parallel resistor to change range of Rheostat
 $Comp
@@ -1077,4 +1001,28 @@ Wire Wire Line
 	6000 2450 6450 2450
 Wire Wire Line
 	6000 5300 6450 5300
+Wire Wire Line
+	3900 3400 5450 3400
+Wire Wire Line
+	4400 2800 5000 2800
+Wire Wire Line
+	4400 5650 5000 5650
+Wire Wire Line
+	3900 6250 5450 6250
+Wire Wire Line
+	3900 2800 3900 1700
+Wire Wire Line
+	3500 1700 3900 1700
+Connection ~ 3900 1700
+Wire Wire Line
+	3900 1700 3900 1200
+Wire Wire Line
+	3900 5650 3900 4550
+Wire Wire Line
+	3900 4550 3550 4550
+Wire Wire Line
+	3900 4550 3900 4050
+Wire Wire Line
+	3900 4050 3550 4050
+Connection ~ 3900 4550
 $EndSCHEMATC
